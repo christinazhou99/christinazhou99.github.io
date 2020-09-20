@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/christinazhou99.github.io/static/css/main.5f361e03.chunk.css",
+    "main.js": "/christinazhou99.github.io/static/js/main.4bf592fd.chunk.js",
+    "main.js.map": "/christinazhou99.github.io/static/js/main.4bf592fd.chunk.js.map",
+    "runtime-main.js": "/christinazhou99.github.io/static/js/runtime-main.1494a162.js",
+    "runtime-main.js.map": "/christinazhou99.github.io/static/js/runtime-main.1494a162.js.map",
+    "static/js/2.b0722dae.chunk.js": "/christinazhou99.github.io/static/js/2.b0722dae.chunk.js",
+    "static/js/2.b0722dae.chunk.js.map": "/christinazhou99.github.io/static/js/2.b0722dae.chunk.js.map",
+    "index.html": "/christinazhou99.github.io/index.html",
+    "precache-manifest.90421c3c7f9fc85f6af5325e140d2d02.js": "/christinazhou99.github.io/precache-manifest.90421c3c7f9fc85f6af5325e140d2d02.js",
+    "service-worker.js": "/christinazhou99.github.io/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/christinazhou99.github.io/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.b0722dae.chunk.js.LICENSE.txt": "/christinazhou99.github.io/static/js/2.b0722dae.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/christinazhou99.github.io/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1494a162.js",
+    "static/js/2.b0722dae.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.4bf592fd.chunk.js"
+  ]
+}
