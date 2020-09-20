@@ -25,7 +25,7 @@ export default function Loading() {
     useEffect(() => {
         const timer = setTimeout(() => {
           history.push('/results');
-        }, 3000);
+        }, 4000);
         return () => clearTimeout(timer);
     }, [history]);
 

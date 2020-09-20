@@ -34,10 +34,7 @@ export default function Login() {
                             </Typography>
                             <Typography variant='subtitle1'>
                             <br/>
-                            Roomy is a space that connects people in any and every way! Anyone from friends to family to classmates can spend quality time together as if they were right by each other. 
-                            With music as a binding medium, soothing, exciting, and setting the atmosphere, our rooms are open to all. So come on in, it’s roomy in here!
-                            <br /><br />
-                            Click the door to begin.
+                            Welcome to Energy Transfer’s Natural Gas Liquids Export Terminal scheduling program. In order to generate an optimized dock usage schedule, please upload a CSV file with customer ID, month, product split, total volume, requested propane and butane volumes, and preferred arrival start and end dates listed.
                             </Typography>
                         </Box>
                     </Grid>
