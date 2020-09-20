@@ -3,14 +3,16 @@ import { Route, Switch, useLocation } from 'react-router-dom';
 import FadeIn from 'react-fade-in';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Header from './Header';
-
+import './App.css'
 
 const Landing = lazy(() => import('./Landing'));
-// const Login = lazy(() => import('../components/Login'));
+const Results = lazy(() => import('./Results'));
+const Loading = lazy(() => import('./Loading'));
 
 
 const routes = [
-  // <Route path="/login" exact component={Login} key="login" />,
+  <Route path="/results" exact component={Results} key="results" />,
+  <Route path="/loading" exact component={Loading} key="loading" />,
   <Route path="/" exact component={Landing} key="landing" />
 ]
 

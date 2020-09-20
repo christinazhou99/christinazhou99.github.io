@@ -1,6 +1,7 @@
 import React from 'react';
-import { Box, Grid, Typography, Container } from '@material-ui/core';
+import { Box, Button, Grid, Typography, Container } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import { useDropzone } from 'react-dropzone';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
@@ -8,20 +9,26 @@ const useStyles = makeStyles(() => ({
         marginTop: '8rem'
     },
     rightBox: {
-        // marginRight: '2rem',
-        // marginLeft: '-2rem'
+        marginRight: '4rem',
+        marginLeft: '4rem'
     },
 }));
 
 export default function Login() {
     const classes = useStyles();
+    const {acceptedFiles, getRootProps, getInputProps} = useDropzone();
+    const files = acceptedFiles.map(file => (
+        <li key={file.path}>
+          {file.path} - {file.size} bytes
+        </li>
+    ));
     
     return (
         <>
             <Container className={classes.cont} maxWidth="lg">
                 <Grid container alignItems="center" justify="center" spacing={1}>
                 <Grid item xs={6}>
-                        <Box className={classes.rightBox}>
+                        <Box>
                             <Typography variant='h3'>
                                 Schedule Transfer
                             </Typography>
@@ -32,20 +39,23 @@ export default function Login() {
                             <br /><br />
                             Click the door to begin.
                             </Typography>
-                            <Typography color='error'><br /><br />Note: this site works best on a standard laptop resolution.</Typography>
-                            {/* <Button variant="contained" color="primary" fullWidth={true} component={Link} to={'/login'}>Enter</Button> */}
                         </Box>
                     </Grid>
                     <Grid item xs={6}>
-                        <Link to='/login'>
-                            {/* <img src={doorSrc} className={classes.img} alt="door" 
-                                onMouseEnter={() => setDoorSrc(doorOpen)}
-                                onMouseOut={() => setDoorSrc(doorClosed)}
-                            /> */}
-                            To next page
-                        </Link>
+                        <Box className={classes.rightBox}>
+                            <div {...getRootProps({className: 'dropzone'})}>
+                                <input {...getInputProps()} />
+                                <Button variant="contained" color="primary" fullWidth={true}>Upload inputs</Button>
+                            </div>
+                            <aside>
+                                <h4>Files</h4>
+                                <ul>{files}</ul>
+                            </aside>
+                            <br />
+                            <Button variant="contained" color="primary" fullWidth={true} component={Link} to='/loading'>Go!</Button>
+                        </Box>
+                        
                     </Grid>
-                    
 
                 </Grid>
             </Container>
